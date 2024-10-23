@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLY NAS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <script>
+        (function (e, t, n, o) {
+            e.PeopleEventsObject = o; e[o] = e[o] || {
+                init: function (t) { e[o].apiKey = t },
+                setPerson: function (t, n) { e[o].person = t; e[o].personTtl = n },
+                forgetPerson: function () { e[o].toForgetPerson = true },
+                track: function () { (e[o].q = e[o].q || []).push(arguments) },
+                updatePerson: function (t) { e[o].personToUpdate = { person: t } },
+                appendToList: function (t, n) { e[o].attributeToAppend = { attributeName: t, attribute: n } }
+            };
+            var r = t.createElement("script");
+            var s = t.getElementsByTagName("script")[0]; r.async = 1; r.src = n; s.parentNode.insertBefore(r, s)
+        })
+            (window, document, 'https://s3.eu-central-1.amazonaws.com/portal-cdn-production/people-events-sdk/pe.latest-2.js', 'pe');
+
+        pe.init('e1531ec62b50af740b67360253a579ab-ae0ec1d6-4694-4dfe-bcd1-ec18addb2f43');
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NF8HPG3Z" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+        <div id="menu-bar" class="fas fa-bars" onclick="showmenu()"></div>
+        <a href="" class="logo"><span>F</span>ly<span>N</span>as</a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#book">book</a>
+            <a href="#packages">packages</a>
+            <a href="#services">features</a>
+            <a href="#gallary">gallary</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+        <div class="icon">
+            <i class="fas fa-search" onclick="showbar()" id="search-btn"></i>
+            <i class="fas fa-user" onclick="showform()"></i>
+        </div>
+        <form action="" class="search-form">
+            <input type="search" id="search-bar" placeholder="What you looking for...">
+            <label type="submit" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <div class="login-form" >
+        <i class="fas fa-times" id="form-close" onclick="hideform()"></i>
+        <form action="" id="formlog">
+            <h3>login</h3>
+            <input type="email" class="box" name="email" placeholder="Enter your email">
+            <input type="password" class="box" placeholder="Enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remmember"> remember me</label>
+            <p>forget password? <a href="">click here</a></p>
+            <p>don't have acount? <a href="">sign up</a></p>
+        </form>
+    </div>
+    <!-------------------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>WORLD WIDE MAKE TRAVEL EASY</h3>
+            <p>Discover New Places With Us, Adventure Awaits</p>
+            <a href="#" class="btn">Discover More</a>
+        </div>
+
+        <div class="controls">
+            <span class="video-btn blue" data-src="images/vid-1.mp4"></span>
+            <span class="video-btn" data-src="images/vid-3.mp4"></span>
+            <span class="video-btn" data-src="images/vid-4.mp4"></span>
+            <span class="video-btn" data-src="images/vid-5.mp4"></span>
+        </div>
+        <div class="video-container">
+            <video src="images/vid-1.mp4 " id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+
+    <!------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------>
+    <span id="book" style="font-size: 30px; color: #fff; ">k</span>
+    <section class="book">
+        <h1 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            &nbsp;
+            &nbsp;
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="images/book-img.svg" alt="">
+            </div>
+            <form action="" id="formbook">
+                <div class="inputdiv">
+                    <h3>where are you now</h3>
+                    <input type="text" placeholder="place name" name="now">
+                </div>
+                <div class="inputdiv">
+                    <h3>where to go</h3>
+                    <input type="text" placeholder="place name" name="go">
+                </div>
+                <div class="inputdiv">
+                    <h3>Date</h3>
+                    <input type="date" name="date">
+                </div>
+                <div class="inputdiv">
+                    <h3>Airline</h3>
+                    <input type="text" placeholder="airline name" name="airline">
+                </div>
+                <input type="submit" class="btn" value="book now">
+            </form>
+        </div>
+    </section>
+    <!------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------>
+    <span id="packages" style="font-size: 30px; color: #fff; ">k</span>
+    <section class="packages">
+
+        <h1 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="container">
+            <div class="box">
+                <img src="images/p-1.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> sudan</h3>
+                    <p>thanks to its location sudan remained a commercial and cultural crossing</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$90.00 <span>$120.00</span></div>
+                    <a href="#" class="btn">check now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-2.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> egypt</h3>
+                    <p>egypt contains a third of the world antiquities</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$90.00 <span>$120.00</span></div>
+                    <a href="#" class="btn">check now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-3.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> korea</h3>
+                    <p>korea is known for its advanced industries such as electronics</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$90.00 <span>$120.00</span></div>
+                    <a href="#" class="btn">check now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-4.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> italy</h3>
+                    <p>italy is known for its art , culture and various monuments</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$90.00 <span>$120.00</span></div>
+                    <a href="#" class="btn">check now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-5.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> japan</h3>
+                    <p>japan has a charming nature . it is surrounded by seas</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$90.00 <span>$120.00</span></div>
+                    <a href="#" class="btn">check now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-6.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> india</h3>
+                    <p>india is the second most populous countryin the world </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$90.00 <span>$120.00</span></div>
+                    <a href="#" class="btn">check now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------>
+    <span id="services" style="font-size: 30px; color: #fff; ">k</span>
+    <section class="services">
+
+        <h1 class="heading">
+            <span>f</span>
+            <span>e</span>
+            <span>a</span>
+            <span>t</span>
+            <span>u</span>
+            <span>r</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="container">
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>High credibility</h3>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>suitable prices</h3>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>easy to use</h3>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>Useful</h3>
+            </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3>Comprehensive </h3>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>Reliable In Transmitting</h3>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>Reliable In Speed</h3>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>affordable</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------->
+    <span id="gallary" style="font-size: 30px; color: #fff; ">k</span>
+    <section class="gallary">
+
+        <h1 class="heading">
+            <span>g</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>a</span>
+            <span>r</span>
+            <span>y</span>
+        </h1>
+
+        <div class="container">
+            <div class="box">
+                <img src="images/g-1.jpg" alt="">
+                <div class="content">
+                    <h3>sudan</h3>
+                    <p>Thanks To Its Location Sudan Remained A Commercial And Cultural Crossing</p>
+                    <a href="https://www.bing.com/images/search?q=sudan&form=HDRSC3&first=1" class="btn"
+                        target="_blank">See more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-2.jpg" alt="">
+                <div class="content">
+                    <h3>egypt</h3>
+                    <p>Egypt Contains A Third Of The World Antiquities</p>
+                    <a href="https://www.bing.com/images/search?q=egypt&FORM=HDRSC3" class="btn" target="_blank">See
+                        more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-3.jpg" alt="">
+                <div class="content">
+                    <h3>korea</h3>
+                    <p>Korea Is Known For Its Advanced Industries Such As Electronics</p>
+                    <a href="https://www.bing.com/images/search?q=Korea&FORM=HDRSC3" class="btn" target="_blank">See
+                        more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-4.jpg" alt="">
+                <div class="content">
+                    <h3>italy</h3>
+                    <p>Italy Is Known For Its Art , Culture And Various Monuments</p>
+                    <a href="https://www.bing.com/images/search?q=Italy&FORM=HDRSC3" class="btn" target="_blank">See
+                        more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-5.jpg" alt="">
+                <div class="content">
+                    <h3>jappan</h3>
+                    <p>Japan Has A Charming Nature . It Is Surrounded By Seas</p>
+                    <a href="https://www.bing.com/images/search?q=Japan&FORM=HDRSC3" class="btn" target="_blank">See
+                        more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-6.jpg" alt="">
+                <div class="content">
+                    <h3>india</h3>
+                    <p>India Is The Second Most Populous Countryin The World</p>
+                    <a href="https://www.bing.com/images/search?q=India&FORM=HDRSC3" class="btn" target="_blank">See
+                        more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-7.jpg" alt="">
+                <div class="content">
+                    <h3>saudi arabia</h3>
+                    <p>saudi arabia Has A Charming Nature . It Is Surrounded By Seas</p>
+                    <a href="https://www.bing.com/images/search?q=saudiarabia&FORM=HDRSC3" class="btn"
+                        target="_blank">See more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-8.jpg" alt="">
+                <div class="content">
+                    <h3>morocco</h3>
+                    <p>morocco Contains A Third Of The World Antiquities</p>
+                    <a href="https://www.bing.com/images/search?q=morocco&FORM=HDRSC3" class="btn" target="_blank">See
+                        more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-9.jpg" alt="">
+                <div class="content">
+                    <h3>kenya</h3>
+                    <p>kenya Is Known For Its Advanced Industries Such As Electronics</p>
+                    <a href="https://www.bing.com/images/search?q=kenya&FORM=HDRSC3" class="btn" target="_blank">See
+                        more</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!----------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------->
+    <span id="review" style="font-size: 30px; color: #fff; ">k</span>
+    <section class="review">
+
+        <h1 class="heading">
+            <span>r</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>e</span>
+            <span>w</span>
+            <span>s</span>
+        </h1>
+
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/pic1.jpg" alt="">
+                        <h3>Karem Omer</h3>
+                        <p>the site is very useful for every traveler and i recommend trying it because it is easy to
+                            use</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/pic2.jpg" alt="">
+                        <h3>Karam Alaa</h3>
+                        <p>excellent experience with this site . it is comprehensive and reliable in transmitting and
+                            speed . i recommend it to separate</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/pic3.jpg" alt="">
+                        <h3>khalid gamar</h3>
+                        <p>the site is very useful and high credibility . i advise any traveler to use this site</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/pic4.jpg" alt="">
+                        <h3>aser omer</h3>
+                        <p>great service and useful website . thank you and good luck to all those running this platform
+                        </p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!----------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------->
+
+    <span id="contact" style="font-size: 30px; color: #fff; ">k</span>
+    <section class="contact">
+
+        <h1 class="heading">
+            <span>c</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+        </h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="images/contact-img.svg" alt="">
+            </div>
+            <form action="">
+                <div class="inputbox">
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="inputbox">
+                    <input type="number" placeholder="number">
+                    <input type="text" placeholder="subject">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+                <input type="submit" class="btn" value="send message">
+            </form>
+        </div>
+    </section>
+
+    <!------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------->
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>about us</h3>
+                <p>fly nas is the number 1 travel app for flight search and booking in the mena region with a
+                    year-over-year groth of <br> over 157.7% and 143,002 downloads in february 2023 . <br>price you can
+                    trust , there are no commissions or additional expenses . <br>book now with fly nas</p>
+            </div>
+            <div class="box">
+                <h3>branches</h3>
+                <a href="#">sudan</a>
+                <a href="#">egypt</a>
+                <a href="#">korea</a>
+                <a href="#">japan</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home">home</a>
+                <a href="#book">book</a>
+                <a href="#packages">packages</a>
+                <a href="#services">services</a>
+                <a href="#gallary">gallary</a>
+                <a href="#review">review</a>
+                <a href="#contact">contact</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="https://www.facebook.com" target="_blank">facebook</a>
+                <a href="https://www.instagram.com" target="_blank">instagram</a>
+                <a href="https://www.twitter.com" target="_blank">twitter</a>
+                <a href="https://www.linkedin.com" target="_blank">linkedin</a>
+            </div>
+        </div>
+        <h1 class="created">created by <span>khalid gamar</span> all right reserved</h1>
+    </section>
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="travel.js"></script>
+
+    <script>
+        // ---------------------------------------------------------------------------------------------------------
+        // ---------------------------------------------------------------------------------------------------------
+         // تتبع زر Login
+        // ---------------------------------------------------------------------------------------------------------
+        // ---------------------------------------------------------------------------------------------------------
+       
+        const loginFormm = document.getElementById('formlog');
+        loginFormm.addEventListener('submit', async (evt) => {
+            evt.preventDefault(); // يمنع إعادة تحميل الصفحة
+
+            // استدعاء القيم من النموذج بشكل مباشر باستخدام العناصر
+            const formmail = loginForm.querySelector('input[name="email"]').value; // استدعاء البريد الإلكتروني
+
+            await pe.setPerson({ email: formmail }); // تحديد هوية الشخص عبر البريد الإلكتروني
+            await pe.track('Login');
+        });
+
+        // ---------------------------------------------------------------------------------------------------------
+        // ---------------------------------------------------------------------------------------------------------
+         // تتبع زر Book now
+        // ---------------------------------------------------------------------------------------------------------
+        // ---------------------------------------------------------------------------------------------------------
+        const BookFormm = document.getElementById('formbook');
+        BookFormm.addEventListener('submit', async (evt) => {
+            evt.preventDefault(); // يمنع إعادة تحميل الصفحة
+
+            // استدعاء القيم من النموذج بشكل مباشر باستخدام العناصر
+            const whereNow = BookFormm.querySelector('input[name="now"]').value;
+            const whereGo = BookFormm.querySelector('input[name="go"]').value;
+            const Dat = BookFormm.querySelector('input[name="date"]').value; 
+            const airLine = BookFormm.querySelector('input[name="airline"]').value; 
+
+            await pe.track('BookNow' , {
+                whereAreYouNow : whereNow,
+                whereToGo : whereGo,
+                date : Dat,
+                airline : airLine
+        });
+        
+        // ---------------------------------------------------------------------------------------------------------
+        // ---------------------------------------------------------------------------------------------------------
+         // تتبع زر Book now
+        // ---------------------------------------------------------------------------------------------------------
+        // ---------------------------------------------------------------------------------------------------------
+       
+        const Booking = document.getElementById('container');
+        BookFormm.addEventListener('submit', async (evt) => {
+            evt.preventDefault(); // يمنع إعادة تحميل الصفحة
+
+            // استدعاء القيم من النموذج بشكل مباشر باستخدام العناصر
+            const Location = Booking.querySelector('input[name="loc"]').value;
+            const Price = Booking.querySelector('input[name="price"]').value;
+
+            await pe.track('CheckBooking' , {
+                location : Location,
+                price : Price
+        });
+         });
+         });
+    
+    </script>
+
+
+</body>
+
+</html>
